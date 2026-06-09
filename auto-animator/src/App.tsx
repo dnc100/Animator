@@ -61,7 +61,7 @@ export default function App() {
     formData.append("file", videoFile);
 
     try {
-      const response = await fetch("http://localhost:8000/api/track", {
+      const response = await fetch("https://animator-abc1.onrender.com/api/track", {
         method: "POST",
         body: formData,
       });
